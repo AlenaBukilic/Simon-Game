@@ -1,0 +1,198 @@
+body {
+    background: url('back.jpg');
+    color: #242424;
+    font-family: 'Monoton', cursive;
+
+}
+.bigC {
+    border: 10px solid #242424;
+    border-radius: 50%;
+    height: 450px;
+    width: 450px;
+    margin: 8% auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 3px 7px 7px #797878;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.smallC {
+    border: 5px solid #242424;
+    border-radius: 50%;
+    margin: 0 8.3%;
+    background-color: wheat;
+    height: 215px;
+    width: 215px;
+    position: absolute;
+    text-align: center;
+    box-shadow: 2px 3px 7px 7px #797878;
+}
+
+#green {
+    background-color: #3eaf15;
+    border-top-left-radius: 100%;
+    height: 215px;
+    width: 215px;
+    border: 5px solid #242424;
+    cursor: pointer;
+}
+
+/*#green:hover {
+    background-color: #266d0d;
+}*/
+
+#red {
+    background-color: #f2263e;
+    border-top-right-radius: 100%;
+    height: 215px;
+    width: 215px;
+    border: 5px solid #242424;
+    cursor: pointer;
+}
+
+/*#red:hover{
+    background-color: #af1628;
+}*/
+
+#blue {
+    background-color: #1f68dd;
+    border-bottom-right-radius: 100%;
+    height: 215px;
+    width: 215px;
+    border: 5px solid #242424;
+    cursor: pointer;
+}
+
+/*#blue:hover {
+    background-color: #13438e;
+}*/
+
+#yellow {
+    background-color: #ffe523;
+    border-bottom-left-radius: 100%;
+    height: 215px;
+    width: 215px;
+    border: 5px solid #242424;
+    cursor: pointer;
+}
+
+/*#yellow:hover {
+    background-color: #a3921a;
+}*/
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#count {
+    height: 45px;
+    width: 65px;
+    background: #242424;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 48px;
+    color: red;
+}
+
+#start, #strict {
+    height: 40px;
+    width: 40px;
+    background: red;
+    border-radius: 50%;
+    border: 1px solid #242424;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+#strict {
+    background: yellow;
+}
+
+#strict:hover {
+    background-color: #242424;
+    color: yellow;
+}
+
+#start:hover {
+    background-color: #242424;
+    color: red;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-top: 20px;
+}
+
+#tm {
+    font-size: 15px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c51f19;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #53ce48;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
